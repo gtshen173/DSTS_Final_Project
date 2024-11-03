@@ -11,15 +11,14 @@ This repository contains the code and resources for **Flight Delay Prediction**.
 - [Folder Structure](#folder_structure)
 - [Installation](#installation)
 - [How to Run](#how-to-run)
-- [Predictive Model Used](#predictive-model-used)
+- [Model Used](#Model-Used)
 - [Expected Output](#expected-output)
-- [License](#license)
 
 
 
 ## Introduction
-The repository contains code written in Python, which is provided in the form of a Jupyter Notebook (`Part_A_and_B.ipynb`). The code covers various tasks such as data preprocessing, analysis, and model(Regression and Classification) implementation. 
-It also have tableau file (`Zomato_Sydney_Restaurant_Viz.twb`) where drashboard was created. It also contains folder named (`docker`) which has codes to do preprocessing and run regession and classification model. These codes were pushed to docker repository
+The repository contains code written in Python, which is provided in the form of a Jupyter Notebook (`onpremises.ipynb` and `oncloud.ipynb`). The code covers various tasks such as data preprocessing, analysis, and model(on cloud and on premise) implementation. 
+It also have tableau file (`Flight Delay Distribution Dashbaord.twb`) where drashboard was created. It also contains folder named (`oncloud.html`) which has result codes of ran on cloud.
 
 ## Folder Structure
 
@@ -65,7 +64,7 @@ You can run the code in your local machine or in AWS Sage Maker
 Clone the repository as follows 
 ```bash
 git clone https://github.com/gtshen173/DSTS_Final_Project.git
-
+```
 It has two Parts 
 - :Part A Importing, Understanding Data with visulizations and Modelling on Permise 
 - :Part B: Predictive Modelling with both on Cloud.
@@ -80,17 +79,15 @@ Here it will create two CSV files which will be used on cloud.
 
 
 **To run only models in AWS Sage Maker**
+
 - 1. Start a lab.
 - 2. Create a notebook instance and name it "oncloudproject".
 - 3. Open Jupyter Lab and upload this notebook into it.
 - 4. upload the two combined CVS files (combined_csv_v1.csv and combined_csv_v2.csv), which you created in Part A of this project.
+- 5. Open the file oncloud.ipynb file and execute the cells in sequence to run the code.
 
 
-- Open the file oncloud.ipynb file and execute the cells in sequence to run the code.
-
-
-
-## Predictive Model Used
+### Model Used
 
 - On Permise
     Logistic Regression 
@@ -108,6 +105,7 @@ Here it will create two CSV files which will be used on cloud.
 **Classification Models:** The output for classification includes confusion matrix, ROC Curve, Classification Matrices like Accuracy, F1 Score, Percision, and Recall for above models. 
 
 **Tableau Visualizations:** If you using FLight Delay Distribution Dashboard.twb, you'll get interactive dashboard visualizations related to Flight Delay Distribution on various factors.
+
 
 
 **Author:** <br>
